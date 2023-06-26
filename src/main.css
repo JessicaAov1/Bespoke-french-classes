@@ -5,7 +5,7 @@ Variables
 */
 
 :root {
-  --clr-primary: #59644d;
+  --clr-primary: #444d3a;
   --clr-primary-light: #7d8b6d;
   --clr-grey-1: #c3c7c7;
   --clr-blue-5: #3a6d90;
@@ -327,7 +327,7 @@ h3 {
     background-color: var(--clr-red);
   }
   to {
-     background-color: var(--clr-primary-light);
+    background-color: var(--clr-primary-light);
   }
 }
 .contact-link {
@@ -370,7 +370,7 @@ About
 .about-text {
   width: 80%;
   line-height: 1.5rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: var(--clr-grey-1);
   display: block;
   margin: 1rem auto;
@@ -394,7 +394,8 @@ Contents
 .content-text {
   margin: 1.5rem auto;
   padding: 2rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .content-text {
