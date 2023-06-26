@@ -13,7 +13,7 @@ Variables
   --clr-red: #d65148;
   --ff-primary: "Noto Serif", serif;
   --ff-secondary: "Grand Hotel", cursive;
-  --transition: all 0.3s linear;
+  --transition: all 0.5s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
 }
@@ -204,7 +204,7 @@ h3 {
   margin-bottom: 2rem;
 }
 .contact-form {
-   max-width: 100%;
+  max-width: 100%;
   margin: 0 auto 1rem;
 }
 @media screen and (min-width: 768px) {
@@ -286,12 +286,18 @@ h3 {
 }
 #fs-frm [type="submit"] {
   background: var(--clr-grey-1);
-  border-radius: 15%;
+  border: 1px solid var(--clr-cream);
+  border-radius: var(--radius);
   color: var(--clr-primary);
+  /*animation*/
+  animation: gradient 5s ease-in infinite;
+  color: var(--clr-cream);
 }
 #fs-frm [type="submit"]:hover {
   background-color: var(--clr-primary-light);
   color: var(--clr-cream);
+  transform: scale(1.2);
+  transition: var(--transition);
 }
 
 #fs-frm [type="submit"],
@@ -315,6 +321,43 @@ h3 {
   -webkit-appearance: radio;
   -moz-appearance: radio;
   appearance: radio;
+}
+@keyframes gradient {
+  from {
+    background-color: var(--clr-red);
+  }
+  to {
+    background-color: var(--clr-blue-5);
+  }
+}
+.contact-link {
+  background: var(--clr-grey-1);
+  color: var(--clr-cream);
+  padding: 1rem;
+  border: 1px solid var(--clr-cream);
+  border-radius: var(--radius);
+  /*animation*/
+  animation: gradient 5s ease-in infinite;
+}
+.contact-btn {
+  width: 30%;
+  height: 2rem;
+  padding: 1rem;
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 800;
+  cursor: pointer;
+}
+.contact-btn:hover {
+  transform: scale(1.2);
+  transition: var(--transition);
+}
+.contact-btn:link {
+  background: var(--clr-blue-5);
+  color: #c3c7c7;
+  transition: var(--transition);
 }
 /*
 =============
