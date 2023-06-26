@@ -327,7 +327,7 @@ h3 {
     background-color: var(--clr-red);
   }
   to {
-    background-color: var(--clr-blue-5);
+     background-color: var(--clr-primary-light);
   }
 }
 .contact-link {
