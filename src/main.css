@@ -50,7 +50,7 @@ Nav bar
 }
 .nav-btn {
   position: fixed;
-  top: 2%;
+  top: 5%;
   left: 7%;
   font-size: 2rem;
   z-index: 1;
@@ -132,6 +132,13 @@ h1 {
   margin-top: 2rem;
 }
 
+img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 50%;
+}
 h2 {
   text-align: center;
   line-height: 1.5;
@@ -139,15 +146,7 @@ h2 {
   font-weight: 600;
   letter-spacing: var(--spacing);
   color: var(--clr-cream);
-  margin: 1rem;
-}
-
-img {
-  display: block;
-  margin: auto;
-  width: 100%;
-  padding: 2rem;
-  border-radius: 50%;
+  margin: 1rem 1rem 0;
 }
 @media screen and (min-width: 768px) {
   h1 {
@@ -162,11 +161,11 @@ img {
 }
 .intro-text {
   line-height: 3;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-family: var(--ff-primary);
   text-align: center;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   line-height: 1.5;
 }
 
@@ -191,7 +190,7 @@ img {
   margin: 2rem auto;
   padding: 1rem;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: var(--ff-primary);
   color: var(--clr-cream);
   font-weight: 400;
@@ -207,8 +206,13 @@ h3 {
 .contact-form {
   display: grid;
   grid-template-columns: minmax(350px 1fr);
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto 1rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-form {
+    max-width: 70%;
+  }
 }
 
 #fs-frm input,
@@ -329,6 +333,7 @@ About
   color: var(--clr-grey-1);
   display: block;
   margin: 1rem auto;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .about-text {
@@ -368,3 +373,4 @@ a {
 a:hover {
   color: var(--clr-cream);
 }
+
