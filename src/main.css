@@ -5,9 +5,9 @@ Variables
 */
 
 :root {
- --clr-primary: #6b7560;
+  --clr-primary: #6b7560;
   --clr-primary-light: #96a882;
- --clr-grey-1: #d7dfdf;
+  --clr-grey-1: #d7dfdf;
   --clr-blue-5: #3a6d90;
   --clr-cream: #f3fff2;
   --clr-red: #d65148;
@@ -171,7 +171,7 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .intro-text {
-    font-size: 1.25rem;
+    font-size: 1rem;
     max-width: 80%;
   }
 }
@@ -184,7 +184,23 @@ h2 {
     max-width: 30%;
   }
 }
-.home-info {
+
+h3 {
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--clr-cream);
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+.study-img {
+  width: 30%;
+}
+/*
+=============
+Contact 
+=============
+*/
+.contact-info {
   line-height: 2;
   display: block;
   margin: 2rem auto;
@@ -195,14 +211,11 @@ h2 {
   color: var(--clr-cream);
   font-weight: 400;
 }
-
-h3 {
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--clr-cream);
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
+/*
+=============
+Contact Form
+=============
+*/
 .contact-form {
   max-width: 100%;
   margin: 0 auto 1rem;
@@ -378,7 +391,7 @@ About
 }
 @media screen and (min-width: 768px) {
   .about-text {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 2rem;
     margin-top: 3rem;
     color: var(--clr-grey-1);
@@ -399,7 +412,7 @@ Contents
 }
 @media screen and (min-width: 768px) {
   .content-text {
-    font-size: 1.25rem;
+    font-size: 1rem;
     max-width: 80%;
   }
 }
